@@ -71,9 +71,8 @@
     margin: 0.5rem 1rem 0.5rem 0;
   }
   
- main section {
+main section {
   display: flex;
-  gap: 1rem; /* Adds space between the columns */
 }
 
 /* Divs inside the section */
@@ -82,42 +81,28 @@ main section div {
   border: 1px solid #008000;
   border-radius: 10px;
   flex: 1;
+  margin-right: 1rem;
   text-align: center;
-  padding: 1rem;
+}
+
+/* Remove the right margin on the last div */
+main section div:last-child {
+  margin-right: 0;
 }
 
 /* h2 inside div styling */
 main section div h2 {
   background-color: #008000;
   color: white;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
   margin-top: 0;
-  padding: 1rem;
 }
 
 /* Image inside the div */
 main section div img {
   border: 3px double #333;
   display: block;
-  margin: 1rem auto;
-  max-width: 100%;
-  height: auto;
-}
-
-/* Link below the image */
-main section div a {
-  display: inline-block;
-  padding: 0.5rem;
-  background-color: #008000;
-  color: white;
-  text-decoration: none;
-  margin-top: 1rem;
-  border-radius: 5px;
-}
-
-main section div a:hover {
-  background-color: black;
-  color: #94e39a;
+  margin: 0 auto;
 }
   /* Sidebar */
   aside section {
